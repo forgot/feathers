@@ -23,7 +23,7 @@
     "node": ">= 12"
   },
   "scripts": {
-    "install": "lerna bootstrap",
+    "install": "lerna bootstrap --ignore-prepublish",
     "publish": "lerna publish && git commit -am \"chore: Update changelog\" && git push origin",
     "publish:premajor": "lerna publish premajor --preid pre --pre-dist-tag pre && git commit -am \"chore: Update version and changelog\" && git push origin",
     "publish:prerelease": "lerna publish prerelease --preid pre --pre-dist-tag pre --dist-tag pre && git commit -am \"chore: Update version and changelog\" && git push origin",
